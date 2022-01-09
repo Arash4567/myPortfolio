@@ -19,7 +19,7 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
-  --container-color: #FFF;
+  --container-color: #fff;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -152,7 +152,8 @@ img {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-.nav__logo:hover, .nav__toggle:hover {
+.nav__logo:hover,
+.nav__toggle:hover {
   color: var(--first-color);
 }
 .nav__toggle {
@@ -168,9 +169,9 @@ img {
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transform: .3s;
+    transform: 0.3s;
   }
 }
 
@@ -217,7 +218,7 @@ img {
   gap: 1rem;
 }
 .home__content {
-  grid-template-columns: .5fr 3fr;
+  grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
 }
@@ -263,8 +264,8 @@ img {
   transition: 0.3s;
 }
 .home__scroll-button:hover {
-  transform: translateY(.25rem);
-  transition: .3s;
+  transform: translateY(0.25rem);
+  transition: 0.3s;
 }
 .home__scroll-mouse {
   font-size: 2rem;
@@ -282,9 +283,9 @@ img {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #FFF;
+  color: #fff;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
 .button:hover {
@@ -293,7 +294,7 @@ img {
 .button__icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transition: .3s;
+  transition: 0.3s;
 }
 .button--flex {
   display: inline-flex;
@@ -302,7 +303,7 @@ img {
 /*==================== ABOUT ====================*/
 .about__img {
   width: 300px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
 }
@@ -333,7 +334,106 @@ img {
   justify-content: center;
 }
 /*==================== SKILLS ====================*/
-
+.skills__container {
+  row-gap: 0;
+}
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.skills__icon {
+  margin-right: var(--mb-0-75);
+}
+.skills__title {
+  font-size: var(--h3-font-size);
+}
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.skills__arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+.skills__html {
+  width: 87%;
+}
+.skills__css {
+  width: 72%;
+}
+.skills__js {
+  width: 61%;
+}
+.skills__react {
+  width: 57%;
+}
+.skills__scala {
+  width: 34%;
+}
+.skills__play {
+  width: 52%;
+}
+.skills__akka {
+  width: 61%;
+}
+.skills__sql {
+  width: 57%;
+}
+.skills__docker {
+  width: 26%;
+}
+.skills__linux {
+  width: 57%;
+}
+.skills__bash {
+  width: 31%;
+}
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+  transition: 1s;
+  
+}
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
 /*==================== QUALIFICATION ====================*/
 
 /*==================== SERVICES ====================*/
