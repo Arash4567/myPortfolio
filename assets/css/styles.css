@@ -435,6 +435,10 @@ img {
   transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
+.qualification__sections {
+  width: 90%;
+  margin: auto;
+}
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
